@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset = "utf-8">
+        <title>Контролен панел за паметен дом</title>
+        <link rel="stylesheet" href="web1.css">
+    </head>
+    <body>
+        <h1><img src="kukja.png" width="60" alt="kukja">Контролен панел за паметен дом</h1>
+        <h3>Добредојдовте во вашиот паметен дом!</h3>
+        <h2 id="Nazad"><img src="nav.png" width="30" height="27" alt="navmeni"> Навигациско мени</h2>
+        <ul>
+            <li><a href="#Спална">Спална</a></li>
+            <li><a href="#Дневна">Дневна</a></li>
+            <li><a href="#Кујна">Кујна</a></li>
+            <li><a href="#Градина">Градина</a></li>
+            <li><a href="#Правила">Правила</a></li>
+            <li><a href="#Нотификации">Нотификации</a></li>
+        </ul>
+        <h2 id="Спална"><img src="spalna.png" width="35" alt="spalna"> Спална</h2>
+        <table border="1">
+            <caption><strong>Сензори во спална</strong></caption>
+            <thead>
+                <tr>
+                    <th><i>Сензор</i></th>
+                    <th><i>Вредност</i></th>
+                    <th><i>Статус(вклучен/исклучен)</i></th>
+                    <th><i>Батерија</i></th>
+                    <th><i>Состојба според правила</i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Температура(°C)</td>
+                    <td><input type="number" name="temp" value="19"></td>
+                    <td>
+                        <select name="status">
+                        <option value="vklucen" selected>Вклучен</option>
+                        <option value="isklucen">Исклучен</option>
+                        </select>
+                        </td>
+                    <td>80%</td>
+                    <td>Надвор од граници</td>
+                </tr>
+                <tr>
+                    <td>Влажност</td>
+                    <td><input type="range" min="0" max="100" value="45"></td>
+                    <td>
+                        <select name="status">
+                        <option value="vklucen" selected>Вклучен</option>
+                        <option value="isklucen">Исклучен</option>
+                        </select>
+                    </td>
+                    <td>75%</td>
+                    <td>Нормална</td>
+                </tr>
+                <tr>
+                    <td>Светло</td>
+                    <td><input type="radio" name="svetlo" value="vkluceno" checked>Вклучено  
+                        <input type="radio" name="svetlo" value="iskluceno">Исклучено
+                    </td>
+                    <td>
+                        <select name="status">
+                        <option value="vklucen" selected>Вклучен</option>
+                        <option value="isklucen">Исклучен</option>
+                        </select>
+                        </td>
+                    <td>60%</td>
+                    <td>Нормална</td>
+                </tr>               
+            </tbody>
+        </table>
+
+        <p><a href="#Nazad">Назад</a></p>
+
+        <h2 id="Дневна"><img src="dnevna.png" width="45" alt="dnevna"> Дневна</h2>
+        <table border="1">
+            <caption><strong>Сензори во дневна</strong></caption>
+            <thead>
+                <tr>
+                    <th><i>Сензор</i></th>
+                    <th><i>Вредност</i></th>
+                    <th><i>Статус(вклучен/исклучен)</i></th>
+                    <th><i>Батерија</i></th>
+                    <th><i>Состојба според правила</i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Температура(°C)</td>
+                    <td><input type="number" name="temp" value="24"></td>
+                    <td>
+                        <select name="status">
+                        <option value="vklucen" selected>Вклучен</option>
+                        <option value="isklucen">Исклучен</option>
+                        </select>
+                    </td>
+                    <td>73%</td>
+                    <td>Нормална</td>
+                </tr>
+                <tr>
+                    <td>Вклучен телевизор</td>
+                    <td><input type="checkbox"></td>
+                    <td>
+                        <select name="status">
+                        <option value="vklucen" >Вклучен</option>
+                        <option value="isklucen" selected>Исклучен</option>
+                        </select>
+                    </td>
+                    <td>0%</td>
+                    <td>Надвор од граници</td>
+                </tr>
+                <tr>
+                    <td>Последно движење</td>
+                    <td><input type="time" name="vreme" value="11:15"></td>
+                    <td>
+                        <select name="status">
+                        <option value="vklucen" selected>Вклучен</option>
+                        <option value="isklucen">Исклучен</option>
+                        </select>
+                    </td>
+                    <td>94%</td>
+                    <td>Нормална</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><a href="#Nazad">Назад</a></p>
+
+        <h2 id="Кујна"><img src="kujna.png" width="35" alt="kujna"> Кујна</h2>
+        <table border="1">
+            <caption><strong>Сензори во кујна</strong></caption>
+            <thead>
+                <tr>
+                    <th><i>Сензор</i></th>
+                    <th><i>Вредност</i></th>
+                    <th><i>Статус(вклучен/исклучен)</i></th>
+                    <th><i>Батерија</i></th>
+                    <th><i>Состојба според правила</i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Последно детектиран дим</td>
+                    <td><input type="datetime-local" name="dim" value="2025-10-10T12:30"></td>
+                    <td>
+                        <select name="status">
+                        <option value="vklucen" selected>Вклучен</option>
+                        <option value="isklucen">Исклучен</option>
+                        </select>
+                    </td>
+                    <td>82%</td>
+                    <td>Нормална</td>
+                </tr>
+                <tr>
+                    <td>Состојба на машина за садови</td>
+                    <td><select name="sostojba na masina">
+                    <option value="1" selected>Празна</option>
+                    <option value="2">Полупразна</option>
+                    <option value="3">Полна</option>
+                    </select></td>
+                    <td>
+                        <select name="status">
+                        <option value="vklucen" selected>Вклучен</option>
+                        <option value="isklucen">Исклучен</option>
+                        </select>
+                    </td>
+                    <td>41%</td>
+                    <td>Нормална</td>
+                </tr>
+                <tr>
+                    <td>Број на вклучени рингли</td>
+                    <td><input type="number" name="broj na ringli" value="4"></td>
+                    <td>
+                        <select name="status">
+                        <option value="vklucen" selected>Вклучен</option>
+                        <option value="isklucen">Исклучен</option>
+                        </select>
+                    </td>
+                    <td>55%</td>
+                    <td>Надвор од граници</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><a href="#Nazad">Назад</a></p>
+
+        <h2 id="Градина"><img src="gradina.png" width="35" alt="gradina"> Градина</h2>
+        <table border="1">
+            <caption><strong>Сензори во градина</strong></caption>
+            <thead>
+                <tr>
+                    <th><i>Сензор</i></th>
+                    <th><i>Вредност</i></th>
+                    <th><i>Статус(вклучен/исклучен)</i></th>
+                    <th><i>Батерија</i></th>
+                    <th><i>Состојба според правила</i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Осветлување</td>
+                    <td><input type="color" name="boja"></td>
+                    <td>
+                        <select name="status">
+                        <option value="vklucen" selected>Вклучен</option>
+                        <option value="isklucen">Исклучен</option>
+                        </select>
+                        </td>
+                    <td>68%</td>
+                    <td>Нормална</td>
+                </tr>
+                <tr>
+                    <td>Влажност на почва</td>
+                    <td><input type="range" min="0" max="100" value="74"></td>
+                    <td>
+                        <select name="status">
+                        <option value="vklucen" selected>Вклучен</option>
+                        <option value="isklucen">Исклучен</option>
+                        </select>
+                        </td>
+                    <td>99%</td>
+                    <td>Нормална</td>
+                </tr>
+                <tr>
+                    <td>Последно засадени цвеќиња</td>
+                    <td><input type="date" name="datum" value="2026-09-01"></td>
+                    <td>
+                        <select name="status">
+                        <option value="vklucen" selected>Вклучен</option>
+                        <option value="isklucen">Исклучен</option>
+                        </select>
+                        </td>
+                    <td>33%</td>
+                    <td>Нормална</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><a href="#Nazad">Назад</a></p>
+
+        <h2 id="Правила"><img src="pravila.png" width="40" alt="pravila">Правила</h2>
+
+        <table border="1">
+            <caption><strong>Дозволени вредности</strong></caption>
+            <thead>
+                <tr>
+                    <th><i>Соба</i></th>
+                    <th><i>Тип на сензор</i></th>
+                    <th><i>Дозволена зона</i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Спална</td>
+                    <td>Температура</td>
+                    <td>20°C &lt; T &lt; 25°C</td>
+                </tr>
+                <tr>
+                    <td>Спална</td>
+                    <td>Влажност</td>
+                    <td>40% &lt; humidity &lt;60%</td>
+                </tr>
+                <tr>
+                    <td>Дневна</td>
+                    <td>Температура</td>
+                    <td>20°C &lt; T &lt; 25°C</td>
+                </tr>
+                <tr>
+                    <td>Кујна</td>
+                    <td>Последно детекиран дим</td>
+                    <td>пред денешниот датум</td>
+                </tr>
+                <tr>
+                    <td>Кујна</td>
+                    <td>Број на вклучени рингли</td>
+                    <td>&lt; 4</td>
+                </tr>
+                <tr>
+                    <td>Градина</td>
+                    <td>Влажност на почва</td>
+                    <td>50% &lt; humidity &lt; 75%</td>
+                </tr>
+                <tr>
+                    <td>Сите</td>
+                    <td>Батерија</td>
+                    <td>battery &gt; 20%</td>
+                </tr>
+            </tbody>
+        </table> 
+
+        <p><a href="#Nazad">Назад</a></p>
+
+        <h2 id="Нотификации"><img src="notifikacii.png" width="30" alt="notifikacii"> Нотификации</h2>
+
+        <details>
+        <summary>Спална - 1 предупредување</summary>
+        <ol><li>Температурата е 19°C. Дозволена зона: 20°C - 25°C.</li></ol>
+        </details>
+
+        <details>
+        <summary>Дневна - 1 предупредување</summary>
+        <ol><li>Сензорот за телевизорот е исклучен и батеријата е 0% (&lt; 20%)</li></ol>
+        </details>
+
+        <details>
+        <summary>Кујна - 1 предупредување</summary>
+        <ol><li>Бројот на вклучени рингли е над дозволената граница.</li></ol>
+        </details>
+
+        <details>
+        <summary>Градина - 0 предупредувања</summary>
+        <ol><li>Вредностите се во дозволените граници.</li></ol>
+        </details>
+
+        <p><a href="#Nazad">Назад</a></p>
+
+    </body>
+</html>
