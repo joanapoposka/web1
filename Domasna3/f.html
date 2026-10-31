@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formula 1 Race Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>FORMULA 1</h1>
+    <h2>Race Simulator</h2>
+
+    <h3>Race Standings</h3>
+    
+    <div class="raceContainer">
+
+        <div class="standings">
+            <table id="raceTable">
+                <tr>
+                    <th>Position</th>
+                    <th>Driver</th>
+                    <th>Team</th>
+                    <th>Tyres</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="commentary">
+            <h3>🔴 LIVE EVENTS</h3>
+            <div id="raceEvents">
+                <p>Waiting for the race to start...</p>
+            </div>
+        </div>
+
+    </div>
+
+    <p id="lapInfo">Lap: 0 / 10</p>
+
+    <div class="raceControls">
+        <button id="nextLap">NEXT LAP</button>
+        <p id="winnerMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
